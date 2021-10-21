@@ -1,0 +1,3 @@
+[submodule "dice-shuffle"]
+	path = dice-shuffle
+	url = ./dice-shuffle
