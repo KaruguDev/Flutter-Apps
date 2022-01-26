@@ -5,33 +5,23 @@ TextStyle kTitleTextStyle = GoogleFonts.staatliches(
   fontSize: 40,
 );
 
-TextStyle kCurrentWeatherTextStyle = GoogleFonts.staatliches(
+TextStyle kTextStyle25 = GoogleFonts.staatliches(
   fontSize: 25,
 );
 
-TextStyle kCurrentWeatherDescTextStyle = GoogleFonts.staatliches(
+TextStyle kTextStyle20 = GoogleFonts.staatliches(
   fontSize: 20,
 );
 
-TextStyle kCurrentLocationTextStyle = GoogleFonts.staatliches(
+TextStyle kTextStyle30 = GoogleFonts.staatliches(
   fontSize: 30,
 );
 
-TextStyle kForecastWeatherTextStyle = GoogleFonts.staatliches(
+TextStyle kTextStyle15 = GoogleFonts.staatliches(
   fontSize: 15,
 );
 
-TextStyle kForecastWeatherDescTextStyle = GoogleFonts.staatliches(
-  fontSize: 20,
+TextStyle kTextButtonStyle18 = GoogleFonts.staatliches(
+  fontSize: 18,
+  color: Colors.white,
 );
-// GoogleFonts kTitleTextStyle = GoogleFonts.staatliches(
-//   textStyle: Theme.of(context).textTheme.headline4,
-//   fontSize: 80
-// );
-
-// TextStyle(
-//   color: Colors.white,
-//   fontSize: 80,
-//   fontWeight: FontWeight.bold,
-//   fontFamily: 
-// );

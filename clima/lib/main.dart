@@ -13,6 +13,7 @@ class ClimaApp extends StatelessWidget {
       title: 'Clima',
       theme: ThemeData.dark(),
       home: LoadingScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

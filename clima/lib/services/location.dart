@@ -1,28 +1,27 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:clima/utilities/custom_widgets.dart';
 
 class Location {
-  late double latitude;
-  late double longitude;
-
-  Future<void> getLocation() async {
+  Future<Position> getLocation() async {
     try {
+      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) {
+        await Geolocator.openLocationSettings();
+      }
       LocationPermission checkPermission = await Geolocator.checkPermission();
       if (checkPermission == LocationPermission.denied) {
-        LocationPermission requestPermission =
-            await Geolocator.requestPermission();
-        if (requestPermission == LocationPermission.denied) {
-          await Geolocator.requestPermission();
-        }
+        await Geolocator.requestPermission();
       }
-      Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low);
+      Position? position = await Geolocator.getLastKnownPosition();
+      if (position == null) {
+        position = await Geolocator.getCurrentPosition(
+            desiredAccuracy: LocationAccuracy.low,
+            timeLimit: const Duration(seconds: 10));
+      }
 
-      latitude = position.latitude;
-      longitude = position.longitude;
+      return position;
     } catch (e) {
-      ClimaAlert();
-      //throw Exception(e);
+      //print(e);
+      throw Exception(e);
     }
   }
 }
