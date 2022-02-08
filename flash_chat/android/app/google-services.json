@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "187268443723",
+    "project_id": "flash-chat-613ab",
+    "storage_bucket": "flash-chat-613ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187268443723:android:4a06c729f20ac8a427a7ce",
+        "android_client_info": {
+          "package_name": "dev.karugu.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187268443723-lel8179lh4umu1p1cojdsrkf36u2263q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFVygBLvNaP-nEZrMqyM7cZkXxh1RjTAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187268443723-lel8179lh4umu1p1cojdsrkf36u2263q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
