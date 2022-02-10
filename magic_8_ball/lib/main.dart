@@ -31,18 +31,21 @@ class _BallState extends State<Ball> {
         title: Text('Ask Me Anything'),
         backgroundColor: Color(0xFFF252BA6),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          TextButton(
-            onPressed: () {
-              setState(() {
-                ballNumber = Random().nextInt(5) + 1;
-              });
-            },
-            child: Image.asset('images/ball$ballNumber.png'),
-          ),
-        ],
+      body: Container(
+        color: Colors.lightBlueAccent,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  ballNumber = Random().nextInt(5) + 1;
+                });
+              },
+              child: Image.asset('images/ball$ballNumber.png'),
+            ),
+          ],
+        ),
       ),
     );
   }
